@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'mincraft';
+  src: url('./Minecraft-font.ttf');
+  font-weight: bold;
+}
+*{
+  font-family: 'mincraft';
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100vh;
+}
+ul{
+  list-style: none;
+}
+/* -----------------------Landing Page----------------------- */
+.landing-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: url('./image/landing-page.jpg') no-repeat top center/cover;
+}
+
+.logo>img{
+  margin: 20vh 0;
+  width:80vw;
+  min-height: 20vh;
+}
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+.lp-btn{
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  min-width: 20vw;
+  min-height: 10vh;
+  background: #f5f5f7;
+  border: 2px solid #333;
+}
+.lp-btn:hover{
+  transition: background 0.3s ease-in-out;
+  background: rgba(245, 245, 247, 0.9);
+}
+/* -----------------------Main Page----------------------- */
+.main-page {
+  display: flex;
+  height: 100%;
+}
+.world{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  ---------------Side Menu---------------  */
+.sidebar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  right: 0;
+  height: 100%;
+  min-width: 20vw;
+  padding: 2vh 2vw;
+  background: #333;
+  color: #f5f5f7;
+}
+
+/*  -----tool-----  */
+.tools-container{
+
+}
+.tool {
+  cursor: pointer;
+  padding: 10px;
+  padding-bottom: 2px;
+  text-align: center;
+  min-width:fit-content;
+  height:90px ;
+  font-size: 0.9em;
+  border: 2px solid white;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.tool.selected{
+  background-color: blue;
+}
+
+.tool:hover {
+  background-color: rgba(0, 0, 255, 0.9);  
+  transition: background 0.3s ease-in-out;
+}
+.tool .img {
+  height: 80%;
+  width: 80%;
+  margin: -9px auto;
+  margin-bottom: 8px;
+}
+.tool[data-type="0"]>.img {
+  background: url('./image/pickaxe.png') no-repeat center center/contain;
+}
+.tool[data-type="1"]>.img {
+  background: url('./image/shovel.png') no-repeat center center/contain;
+}
+.tool[data-type="2"]>.img {
+  background: url('./image/axe.png') no-repeat center center/contain;
+}
+.sidebar-element{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border: 2px solid white;
+}
+
+/*  ---------------World---------------  */
+.sky{
+  background: skyblue;
+}
+.cloud {
+  background: white;
+}
+
+.grass {
+  background: url('./image/grass:dirt-brick.jpg') no-repeat center center/cover;
+}
+
+.rock {
+  background: url('./image/cobblestone.png') no-repeat center center/cover;
+}
+
+.soil {
+  background: url('./image/dirt.png') no-repeat center center/cover;
+}
+
+.leaves {
+  background: url('./image/leaves.jpeg') no-repeat center center/cover;
+}
+
+.oakLog {
+  background: url('./image/oak.png') no-repeat center center/cover;
+}
+
+.row {
+display: flex;
+flex-direction: column;
+}
+.tile {
+  height: 50px;
+  width: 50px;
+}
+/* world buttons */
+.world-btn-container{
+  height: 30vh;
+  width: 70%;
+}
+.world-btn{
+  font-size: 0.9rem;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 90%;
+  height: 8vh;
+  background: #f5f5f7;
+  border: 2px solid rgb(0, 0, 0);
+}
+.world-btn:hover{
+  transition: background 0.3s ease-in-out;
+  background: rgba(245, 245, 247, 0.8);
+}
